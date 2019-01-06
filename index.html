@@ -622,7 +622,7 @@
 						<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Mensaje"></textarea>
 					</div>
 					<div class="form-group ">
-						<input class="btn btn-primary btn-lg" value="Enviar" type="submit">
+						<input class="btn btn-primary btn-lg" onclick="Enviar()" value="Enviar" type="submit">
 					</div>
 					</div>
 				</div>
@@ -697,8 +697,22 @@
 	<!-- End demo purposes only -->
 
 	<!-- Main JS (Do not remove) -->
+	<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBfRW-YYR7PlxaAPpF0m146ys_oPofI-FY",
+    authDomain: "cam-servicios.firebaseapp.com",
+    databaseURL: "https://cam-servicios.firebaseio.com",
+    projectId: "cam-servicios",
+    storageBucket: "cam-servicios.appspot.com",
+    messagingSenderId: "184890645319"
+  };
+  firebase.initializeApp(config);
+  var db = firebase.firestore();
+</script>
 	<script src="js/main.js"></script>
-
+	
 	</body>
 </html>
 

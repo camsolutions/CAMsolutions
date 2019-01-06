@@ -472,3 +472,24 @@
 
 
 }());
+function Enviar(argument) {
+	// body...
+
+ 
+nombre = document.getElementById('name').value;
+email = document.getElementById('email').value;
+telefono = document.getElementById('phone').value;
+mensaje = document.getElementById('message').value;
+db.collection("Pedidos").add({
+    name: nombre,
+    email: email,
+    telefono: telefono,
+    mensaje: mensaje
+})
+.then(function() {
+    console.log("Document successfully written!");
+})
+.catch(function(error) {
+    console.error("Error writing document: ", error);
+});
+}
