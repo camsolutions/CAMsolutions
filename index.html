@@ -709,7 +709,10 @@
     messagingSenderId: "184890645319"
   };
   firebase.initializeApp(config);
-  var db = firebase.firestore();
+  const db = firebase.firestore();
+  const settings = {/* your settings... */ timestampsInSnapshots: true};
+  db.settings(settings);
+  
 </script>
 	<script src="js/main.js"></script>
 	
