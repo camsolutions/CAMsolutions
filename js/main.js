@@ -488,6 +488,7 @@ db.collection("Pedidos").add({
 })
 .then(function() {
     console.log("Document successfully written!");
+    alert("Su pedido se ha enviado con exito!")
 })
 .catch(function(error) {
     console.error("Error writing document: ", error);
