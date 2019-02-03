@@ -261,16 +261,16 @@
 			</div>
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work_4.png" class="fh5co-project-item image-popup to-animate">
+					<a href="images/work_4.png" onclick="visitar('https://camsolutions.github.io/cam/Secciones/CAMWEB/')" class="fh5co-project-item image-popup to-animate">
 						<img style="height: 250px;" src="images/work_4.png" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
-						<h2>TEMPLATED</h2>
-						<span>Plantilla</span>
-						</div>
+						<h2>TEMPLATED</h2>	
+				       </div>
 					</a>
+
 				</div>
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work_2.jpg" class="fh5co-project-item image-popup to-animate">
+					<a href="images/work_2.jpg" onclick="visitar('https://camsolutions.github.io/cam/')" class="fh5co-project-item image-popup to-animate">
 						<img style="height: 250px;" src="images/work_2.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>REGISTRO PAGOS</h2>
@@ -281,7 +281,7 @@
 
 
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work_3.png" class="fh5co-project-item image-popup to-animate">
+					<a href="images/work_3.png" onclick="visitar('https://camsolutions.github.io/SCliente1/')" class="fh5co-project-item image-popup to-animate">
 						<img style="height: 260px;" src="images/work_3.png" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2></h2>
@@ -290,7 +290,7 @@
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work_7.jpg" class="fh5co-project-item image-popup to-animate">
+					<a href="images/work_7.jpg" onclick="visitar('https://camsolutions.github.io/cam/')" class="fh5co-project-item image-popup to-animate">
 						<img style="height: 250px;" src="images/work_7.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>CATALOGO DE PEDIDOS</h2>
@@ -302,16 +302,16 @@
 	
 
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work_5.jpg" class="fh5co-project-item image-popup to-animate">
+					<a onclick="visitar('https://rcrdesarrolloweb.github.io/cam')" class="fh5co-project-item image-popup to-animate">
 						<img style="height: 250px;" src="images/work_8.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>CAM v1</h2>
-						<span>Photography</span>
+						<span>Web</span>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work_6.png" class="fh5co-project-item image-popup to-animate">
+					<a href="images/work_6.png" onclick="visitar('https://camsolutions.github.io/cam/')" class="fh5co-project-item image-popup to-animate">
 						<img style="height: 250px;" src="images/work_6.png" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>TEMPLATED</h2>
@@ -322,7 +322,7 @@
 				
 
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work_5.png" class="fh5co-project-item image-popup to-animate">
+					<a href="images/work_5.png" onclick="visitar('https://camsolutions.github.io/cam/')" class="fh5co-project-item image-popup to-animate">
 						<img style="height: 250px;" src="images/work_5.png" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>TIENDA ONLINE</h2>
@@ -332,10 +332,10 @@
 				</div>
 				<div class="col-md-4 col-sm-6 col-xxs-12">
 					<a href="images/work_8.jpg" class="fh5co-project-item image-popup to-animate">
-						<img style="height: 250px; " src="images/work_8.jpg" alt="Image" class="img-responsive">
+						<img style="height: 250px;" onclick="visitar('https://camsolutions.github.io/cam/')" src="images/work_8.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>CAMv2</h2>
-						<span>Sketch</span>
+						<span>Web</span>
 						</div>
 					</a>
 				</div>
@@ -343,7 +343,7 @@
 				<div class="clearfix visible-sm-block"></div>
 
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work_1.png" class="fh5co-project-item image-popup to-animate">
+					<a href="images/work_1.png" onclick="visitar('https://camsolutions.github.io/cam/')" class="fh5co-project-item image-popup to-animate">
 						<img style="height: 250px; " src="images/work_1.png" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>Programador</h2>
@@ -674,6 +674,9 @@
 		<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 		<script src="js/jquery.style.switcher.js"></script>
 		<script>
+		function visitar(A) {
+			window.open(A,'_blank');
+		}
 		$(function(){
 			$('#colour-variations ul').styleSwitcher({
 				defaultThemeId: 'theme-switch',
